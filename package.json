@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "seed": "node purchase-item-component/seedingFunction.js",
+    "seedTwo": "node purchase-item-component/seedingFunction2.js",
     "start": "nodemon server/server.js",
     "build": "webpack -w"
   },
