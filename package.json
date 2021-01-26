@@ -1,0 +1,39 @@
+{
+  "name": "purchase-item-component",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "seed": "node purchase-item-component/seedingFunction.js",
+    "seedTwo": "node purchase-item-component/seedingFunction2.js",
+    "start": "nodemon server/server.js",
+    "build": "webpack -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gregorie6112/purchase-item-component.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gregorie6112/purchase-item-component/issues"
+  },
+  "homepage": "https://github.com/Gregorie6112/purchase-item-component#readme",
+  "dependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "@material-ui/core": "^4.11.3",
+    "axios": "^0.21.1",
+    "babel-loader": "^8.2.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.12",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.7",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-icons": "^4.1.0",
+    "webpack": "^5.14.0",
+    "webpack-cli": "^4.3.1"
+  }
+}
