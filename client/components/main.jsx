@@ -6,28 +6,28 @@ const styleTwo = {
   // height: '100%',
   // borderRadius: 5,
   position: 'absolute',
-  right: '33%', // MONITOR: 40%
-  top: '20%',  // MONITOR: 45%
+  right: '40%', // MONITOR: 40%
+  top: '10%',  // MONITOR: 45% // MY SIDE 20%
   transform: 'scale(1.0)' // MONITOR: 1.4
 };
 const fullScreen = {
   position: 'absolute',
-  top: '27%', // 2%
+  top: '15%', // 2%
   right: '35%', // 1000px
   color: '#d4d4d4',
   transform: 'scale(2.0)',
   width: '10px',
   cursor: 'pointer',
-  zIndex: 1,
+  // zIndex: 1,
 };
 
 const rightArrow = {
   position: 'absolute',
-  top: '90%', // 50%
+  top: '50%', // 50%
   right: '36%', // 410px
   fontSize: '16',
   color: 'black',
-  zIndex: 10,
+  // zIndex: 1,
   cursor: 'pointer',
   userSelect: 'none',
   background: '#ffffff33',
@@ -36,11 +36,11 @@ const rightArrow = {
 
 const leftArrow = {
   position: 'absolute',
-  top: '90%', // 50%
+  top: '50%', // 50%
   left: '19.5%', // 330px
   fontSize: '16',
   color: 'black',
-  zIndex: 10,
+  // zIndex: 1,
   cursor: 'pointer',
   userSelect: 'none',
   background: '#ffffff33',
@@ -48,11 +48,11 @@ const leftArrow = {
 };
 
 const BestSeller = {
-  zIndex: 1,
+  // zIndex: 1,
   position: 'absolute',
   left: '19%',
   width: '4%',
-  top: '24%',
+  top: '15%',
 };
 
 const MainDisplay = (props) => (

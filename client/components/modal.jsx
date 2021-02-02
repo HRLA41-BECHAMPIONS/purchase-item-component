@@ -25,7 +25,7 @@ import React from 'react';
 const ModalPopUp = (props) => (
   <div>
     <div style={{ ...SocialMediaModal }}>
-      <div style={{ position: 'relative', width: '90%', left: '7%', height: '100%' }}>
+      <div style={{ position: 'relative', width: '90%', left: '7%', height: '100%', top: '3%' }}>
         <h1 style={{ zIndex: '16', color: 'white', position: 'relative', left: '23%', width: '20%', margin: '0%', display: 'inline-block' }}>Size Guide</h1>
         <div style={{ position: 'relative', left: '43.5%', width: '2%', display: 'inline-block', cursor: 'pointer' }} onClick={() => props.popUp(false)}>
           <svg stroke="currentColor" fill="currentColor" strokeWidth="2" viewBox="0 0 24 24" height="1em" width="50px" xmlns="http://www.w3.org/2000/svg" style={{ zIndex: '1', }}>

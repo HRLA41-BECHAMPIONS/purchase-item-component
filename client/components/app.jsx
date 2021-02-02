@@ -28,27 +28,27 @@ class App extends React.Component {
     this.handleGet();
   }
   handleGet() {
-    axios.get('/bechampions/purchase-item')
+    axios.get('/api/bechampions/purchase-item')
       .then(({ data }) => {
         this.setState({
           data: data
         })
       })
       .catch((err) => console.log(err))
-    axios.get('/bechampions/main')
+    axios.get('/api/bechampions/main')
       .then(({ data }) => {
         this.setState({
           currentImage: data[0].imgurl,
           dataTwo: data
         });
       })
-      .catch(() => {
-        console.log('Has error in get');
+      .catch((err) => {
+        console.log(err);
       });
   }
   handleClick() {
     let title = document.getElementById('title').innerHTML;
-    axios.get(`/bechampions/purchase-item/${title}`)
+    axios.get(`/api/bechampions/purchase-item/${title}`)
       .then(({data}) => {
         this.setState({
           clickedItem: [data]

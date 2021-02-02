@@ -17,7 +17,7 @@ const styleForTitle = {
 const containerStyle = {
   position: 'absolute',
   right: '11%',
-  top: '21%',
+  top: '10%', // 21%
   width: '18%',
   borderLeft: '1px solid #d6d6d6',
   padding: '2%',
