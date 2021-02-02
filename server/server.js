@@ -8,7 +8,7 @@ const morgan = require('morgan');
 app.use(morgan('dev'))
 app.use(express.static(path.join(__dirname, '../public')));
 
-app.get('/api/bechampions/purchase-item', (req,res) => {
+app.get('/api/bechampions/purchase-item',  (req,res) => {
   db.db.find({})
     .then((data) => {
       res.status(200).send(data)
