@@ -5,6 +5,7 @@ var sizes = ["XS", "S", "M", "L", "XL", "2XL", "3XL"];
 var quantity = [3, 9, 1, 4, 5, 7, 6, 2, 8, 10];
 var styles = ["Style S7468   586270", "Style B7368   583270", "Style S7468   00001"];
 const db = require('./database');
+const mongoose = require('mongoose');
 
 const generateColorsArray = () => {
   var array = [];
@@ -46,6 +47,13 @@ const generateData = () => {
 };
 const seeder = () => {
   const data = generateData();
-  db.create(data);
+  db.db.create(data);
+  .then(() => {
+    mongoose.disconnect();
+  })
+  .catch((err) => {
+    console.log(err)
+  })
+
 }
 seeder();

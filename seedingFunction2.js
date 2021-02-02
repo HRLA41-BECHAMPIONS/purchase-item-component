@@ -1,9 +1,6 @@
-// let title = ['red', 'purple'];
-// let imgurl = {
-//   'red' : ['https://bechampions-assets.s3.us-east-2.amazonaws.com/images/topDisplay/colors/redOne.jpg', 'https://bechampions-assets.s3.us-east-2.amazonaws.com/images/topDisplay/colors/redTwo.jpg', 'https://bechampions-assets.s3.us-east-2.amazonaws.com/images/topDisplay/colors/HNS_GF68Y06145_TeamRedScarlet_Side.jpg', 'https://bechampions-assets.s3.us-east-2.amazonaws.com/images/topDisplay/colors/redFour.jpg'],
-//   'purple': ['https://bechampions-assets.s3.us-east-2.amazonaws.com/images/topDisplay/colors/purpleOne.jpg','https://bechampions-assets.s3.us-east-2.amazonaws.com/images/topDisplay/colors/purpleTwo.jpg','https://bechampions-assets.s3.us-east-2.amazonaws.com/images/topDisplay/colors/purpleThree.jpg','https://bechampions-assets.s3.us-east-2.amazonaws.com/images/topDisplay/colors/purpleFour.jpg']
-// };
+
 let db = require('./database');
+let mongosse = require('mongoose');
 let data = [{
   title: 'red',
   imgurl: ['https://bechampions-assets.s3.us-east-2.amazonaws.com/images/topDisplay/colors/redOne.jpg', 'https://bechampions-assets.s3.us-east-2.amazonaws.com/images/topDisplay/colors/redTwo.jpg', 'https://bechampions-assets.s3.us-east-2.amazonaws.com/images/topDisplay/colors/HNS_GF68Y06145_TeamRedScarlet_Side.jpg', 'https://bechampions-assets.s3.us-east-2.amazonaws.com/images/topDisplay/colors/redFour.jpg']
@@ -26,3 +23,9 @@ let data = [{
 // }
 ];
 db.db2.create(data);
+.then(() => {
+  mongoose.disconnect();
+});
+.catch((err) => {
+  console.log(err);
+});

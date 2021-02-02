@@ -76,7 +76,7 @@ class ColorComponent extends React.Component {
     }
     return (
       <div>
-        <div id="colors-to-choose">
+        <div id="colors-to-choose" style={{width: '80%',}}>
           {(Array.isArray(this.props.colors)) ?
             <div style={{display: 'flex', flexWrap: 'wrap',}}>
               {Object.keys(tempObj).map((item, index) => {

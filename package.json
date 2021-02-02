@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "seed": "node purchase-item-component/seedingFunction.js",
-    "seedTwo": "node purchase-item-component/seedingFunction2.js",
+    "seed": "node seedingFunction.js",
+    "seedTwo": "node seedingFunction2.js",
     "start": "nodemon server/server.js",
     "build": "webpack -w"
   },
@@ -28,6 +28,7 @@
     "babel-loader": "^8.2.2",
     "express": "^4.17.1",
     "mongoose": "^5.11.12",
+    "morgan": "^1.10.0",
     "mysql": "^2.18.1",
     "nodemon": "^2.0.7",
     "react": "^17.0.1",
