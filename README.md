@@ -1,4 +1,5 @@
-# purchase-item-component
+## ⏰ Project No Longer Up and Running but pictures located on LinkedIn
+# Purchase Item Component
 - Contains ratings
 - Contains Title
 - Contains Price
